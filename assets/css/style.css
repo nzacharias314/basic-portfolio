@@ -5,7 +5,7 @@
 body {
   width: 960px;
 margin: 0 auto;
-background-image: url(../images/papyrus.png)
+background-image: url(../images/flower-of-life.jpg)
 }
 
 section {
@@ -22,34 +22,43 @@ h1 {
   margin-bottom: 20px;
   color:white;
   font-size: 24px;
-  background: #4aaaa5;
+  background: #4aaaa5c2;
+  float: left;
+}
+
+#spacer {
+  padding: 33px;
+  width: 379.5px;
+  margin-bottom: 20px;
+  color:white;
+  background: #666666c2;
   float: left;
 }
 
 #about {
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 20px;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
+  background: #666666c2;
   float: right;
 }
 
 #portfolio {
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 20px;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
+  background: #666666c2;
   float: right;
 }
 
 #contact {
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 20px;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
+  background: #666666c2;
   float: right;
 }
 
@@ -58,20 +67,144 @@ h1 {
   overflow: auto;
   float: center;
   width: 960;
-  height: 400px;
-  background: #ffffff;
+  height: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffffc2;
 }
 
 #subfooter {
   float: center;
   width: 960;
   padding: 5px;
-  background: #4aaaa5;
+  background: #4aaaa5c2;
 }
 
 #footer {
   float: center;
   width: 960;
   padding: 20px;
-  background: #666666;
+  background: #666666c2;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+    }
+  
+a:visited {
+  color:#333;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #4aaaa5;
+  text-decoration: none;
+}
+
+th, td {
+  padding: 15px;
+  float: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text2] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
